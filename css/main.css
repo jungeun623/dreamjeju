@@ -1,55 +1,108 @@
 @charset "utf-8";
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 1200px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+/* 상단 */
 .header{
-    width: 1000px;
-    height: 300px;
-    background-color: blue;
-}
-.dream p{
     width: 100%;
-    height: 20px;
-    background-color: beige;
+    height: 100px;
+    background-color: aqua;
+}
+/* 상단 메뉴 */
+.top{
+    width: 300px;
+    float: left;
+    margin: 0;
+    font-size: 40px;
+}
+.menu{
+    width: 900px;
+    height: 100%;
+    background-color: chartreuse;
+    float: left;
+    position: relative;
+}
+.menu ul{
+    list-style: none;
+    background-color: aliceblue;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+.menu ul li{
+    float: left;
+    padding: 10px 50px;
+    background-color: bisque;
+}
+/* 이미지 슬라이드 */
+.imgslide{
+    width: 100%;
+    height: 300px;
 }
 /* 공지사항 */
 .notice{
-    width: 100%;
-    height: 40px;
-    background-color: aquamarine;
-}
-.notice p{
-    color: red;
-    background-color: dimgray;
-}
-.notice li{
-    width: 100%;
-    height: 200px;
-}
-.noticemenu li{
+    background-color: darkcyan;
+    width: 600px;
+    height: 300px;
     float: left;
-    background-color: dimgray;
-    width: 100%;
-    height: 100%;
+    padding: 10px;
 }
-/* 메인 오른쪽 사진 */
-.shortcut{
+.notice h3{
+    padding: 5px;
+}
+/* 오른쪽 아이콘(사진) */
+.imgicon{
+    width: 600px;
+    height: 300px;
+    float: left;
+    background-color: rgb(255, 255, 255);
+    /* display: block; */
+}
+.imgicon li{
+    list-style: none;
+    float: left;
+}
+.imgicon img{
+    border-radius: 100px;
+    display: block;
+    padding: 20px;
+}
+.imgicon a{
+    display: block;
+    text-align: center;
+}
+
+/* 하단메뉴 */
+.btmenu{
     width: 100%;
     height: 100px;
-    border-radius: 5px;
-    background-color: rgb(23, 57, 211);
-    float: right;
+    float: left;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
 }
-/* 회사소개 */
-.intro{
+.btmenu hr{
+    border: 2px solid #333;
     width: 100%;
-    height: 30px;
-    background-color: bisque;
+    /* margin: 10px; */
 }
-.intro span{
+.btmenu ul{
+    width: 100%;
+    list-style: none;
+    float: left;
+}
+.btmenu ul > li {
     float: left;
     margin: 10px;
-    
 }
